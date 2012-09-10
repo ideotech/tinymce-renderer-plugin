@@ -1,7 +1,10 @@
 # tinymce-renderer-plugin
 
 ###IMPORTANT! 
-~~A bug has recently been found in the plugin when used with Jira 5.0 which makes this plugin unusable.~~  UPDATE: The Jira 5 bug has been resolved by Atlassian in version 5.0.3 which is now available. Version 1.6.1 of the plugin is released in order to support existing users of the plugin, however no further support will be provided.
+
+Release 1.7 is released for JIRA 5.0 and JIRA 5.1.
+
+A new javascript module now allows the histories to be presented in HTML instead of plain text.
 
 Please note: I am finding it increasingly hard to find time to provide the minimum support necessary, therefore this plugin is no longer supported. Please do not use this for any version of Jira as any upgrade or system change may result in the plugin not working.
 
@@ -11,7 +14,7 @@ For existing users of the plugin who wish to update their Jira instance: I recom
 
 A Jira plugin that provides a wysiwyg textarea renderer using the [TinyMCE Editor](http://tinymce.moxiecode.com).
 
-* [Homepage](http://garyhodgson.github.com/tinymce-renderer-plugin)
+* [Homepage](http://github.com/IdeoTechnologies/tinymce-renderer-plugin)
 
 ## Installation and Configuration
 

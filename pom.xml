@@ -12,10 +12,10 @@
     <name>tinymce-renderer-plugin</name>
     <description>Provides a wysiwyg textarea renderer using the TinyMCE Editor.</description>
     <packaging>atlassian-plugin</packaging>
-    <url>https://github.com/garyhodgson/tinymce-renderer-plugin</url>
+    <url>https://github.com/IdeoTechnologies/tinymce-renderer-plugin</url>
 
     <organization>
-        <name>Gary Hodgson</name>
+        <name>Ideo Technologies</name>
         <url>http://www.ideotechnologies.com</url>
     </organization>
 
