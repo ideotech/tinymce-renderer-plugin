@@ -1,4 +1,4 @@
-package com.garyhodgson.jira.renderer.tinymce;
+package com.ideotechnologies.jira.renderer.tinymce;
 
 import com.atlassian.core.util.HTMLUtils;
 import com.atlassian.event.api.EventPublisher;

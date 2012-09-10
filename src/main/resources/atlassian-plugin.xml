@@ -6,7 +6,7 @@
         <vendor name="${project.organization.name}" url="${project.organization.url}" />
     </plugin-info>
 
-    <jira-renderer key="tinymce-renderer" name="TinyMCE Renderer" class="com.garyhodgson.jira.renderer.tinymce.TinyMCERendererPlugin">
+    <jira-renderer key="tinymce-renderer" name="TinyMCE Renderer" class="com.ideotechnologies.jira.renderer.tinymce.TinyMCERendererPlugin">
         <description>${project.description}</description>
         <resource type="velocity" name="edit" location="templates/plugins/renderers/tinymce/tinymce-renderer-edit.vm"/>
               
@@ -97,7 +97,7 @@
         <java-version min="1.5"/>
     </jira-renderer>
     
-    <jira-renderer key="tinymce-renderer-reverse" name="TinyMCE Renderer - Reverse" class="com.garyhodgson.jira.renderer.tinymce.TinyMCERendererReversePlugin">
+    <jira-renderer key="tinymce-renderer-reverse" name="TinyMCE Renderer - Reverse" class="com.ideotechnologies.jira.renderer.tinymce.TinyMCERendererReversePlugin">
         <description>Reverses html tags created by TinyMCE plugin back to plaintext. This WILL remove all formatting - please test before using.</description>
         <resource type="velocity" name="edit" location="templates/plugins/renderers/text/text-renderer-edit.vm"/> 
         <java-version min="1.5"/>
@@ -109,19 +109,19 @@
 
     <web-section key="tinymce-plugins-section" name="Plugins Admin" location="system.admin" weight="1100">
         <description>TinyMCE Plugin Administration</description>
-        <label key="com.garyhodgson.jira.plugins.web-section.label"/>
+        <label key="com.ideotechnologies.jira.plugins.web-section.label"/>
     </web-section>
 
     <web-item key="tinymceadmin" name="TinyMCE Plugin" section="system.admin/tinymce-plugins-section" weight="10">
         <description>TinyMCE Plugin Config Link</description>
-        <label key="com.garyhodgson.jira.plugins.web-config.label"/>
-        <link linkId="com.garyhodgson.jira.plugins.tinymce.link">/secure/admin/TinyMCERendererAdminAction!default.jspa?atl_token=${atl_token}</link>
+        <label key="com.ideotechnologies.jira.plugins.web-config.label"/>
+        <link linkId="com.ideotechnologies.jira.plugins.tinymce.link">/secure/admin/TinyMCERendererAdminAction!default.jspa?atl_token=${atl_token}</link>
     </web-item>
 
     <webwork1 key="tinymceadminwebworks" name="Administer TinyMCE Renderer" class="java.lang.Object">
         <description>Adds a new action to administer the tinymce settings.</description>
         <actions>
-            <action name="com.garyhodgson.jira.renderer.tinymce.TinyMCERendererAdminAction" alias="TinyMCERendererAdminAction" roles-required="admin">
+            <action name="com.ideotechnologies.jira.renderer.tinymce.TinyMCERendererAdminAction" alias="TinyMCERendererAdminAction" roles-required="admin">
                 <view name="input">/templates/tinymce_admin.vm</view>
                 <view name="success">/templates/tinymce_admin.vm</view>
                 <view name="error">/templates/tinymce_admin.vm</view>
@@ -226,4 +226,12 @@
         <resource type="download" name="plugins/paste/pasteword.htm" location="includes/tiny_mce/plugins/paste/pasteword.htm"/>
         
     </web-resource>
+    <web-resource key="tinymce_renderer_history" name="tinymce_renderer_history">
+        <resource type="download" name="convertHistories.js" location="includes/tiny_mce/history/js/convertHistory.js">
+            <property key="content-type" value="text/javascript"/>
+        </resource>
+        <context>atl.general</context>
+    </web-resource>
+
+
 </atlassian-plugin>

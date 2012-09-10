@@ -1,4 +1,4 @@
-package com.garyhodgson.jira.renderer.tinymce;
+package com.ideotechnologies.jira.renderer.tinymce;
 
 import com.atlassian.jira.ComponentManager;
 import com.atlassian.jira.config.properties.PropertiesManager;
@@ -10,10 +10,10 @@ import webwork.action.ActionContext;
 
 public class TinyMCERendererAdminAction extends JiraWebActionSupport {
 
-    public static final String RENDER_WIKI_TEXT_PROPERTY = "com.garyhodgson.jira.tinymce-renderer-plugin.renderWikiText";
-    public static final String STRIP_ALL_TAGS_PROPERTY = "com.garyhodgson.jira.tinymce-renderer-plugin.stripAllTags";
-    public static final String STRIP_SOME_TAGS_PROPERTY = "com.garyhodgson.jira.tinymce-renderer-plugin.stripSomeTags";
-    public static final String STRIP_NO_TAGS_PROPERTY = "com.garyhodgson.jira.tinymce-renderer-plugin.stripNoTags";
+    public static final String RENDER_WIKI_TEXT_PROPERTY = "com.ideotechnologies.jira.tinymce-renderer-plugin.renderWikiText";
+    public static final String STRIP_ALL_TAGS_PROPERTY = "com.ideotechnologies.jira.tinymce-renderer-plugin.stripAllTags";
+    public static final String STRIP_SOME_TAGS_PROPERTY = "com.ideotechnologies.jira.tinymce-renderer-plugin.stripSomeTags";
+    public static final String STRIP_NO_TAGS_PROPERTY = "com.ideotechnologies.jira.tinymce-renderer-plugin.stripNoTags";
     private PropertySet properties;
 
     public TinyMCERendererAdminAction() {

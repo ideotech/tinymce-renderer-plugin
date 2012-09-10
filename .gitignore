@@ -1,2 +1,7 @@
+.idea
+*.class
 target
 generated-test-resources.zip
+*.iml
+*.ipr
+*.iws
