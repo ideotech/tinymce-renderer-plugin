@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.garyhodgson.jira</groupId>
+    <groupId>com.ideotechnologies.jira</groupId>
     <artifactId>tinymce-renderer-plugin</artifactId>
     <version>1.7</version>
 
@@ -16,7 +16,7 @@
 
     <organization>
         <name>Gary Hodgson</name>
-        <url>http://garyhodgson.com</url>
+        <url>http://www.ideotechnologies.com</url>
     </organization>
 
     <dependencies>
