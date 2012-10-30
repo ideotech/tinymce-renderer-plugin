@@ -25,4 +25,7 @@ HIS.History = {
 
 jQuery(document).ready(function(){
     HIS.History.htmlizeHistories();
+    if ((JIRA.ViewIssueTabs != undefined) && jQuery.isFunction(JIRA.ViewIssueTabs.onTabReady)) {
+       JIRA.ViewIssueTabs.onTabReady (function () {HIS.History.htmlizeHistories();})
+    }
 });
