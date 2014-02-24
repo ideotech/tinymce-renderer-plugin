@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
     // the following hacks are to handle the fact the main issue page has two comment boxes (top, bottom)
     
     if (jQuery("#comment-issue").length != 0) {
-        jQuery("#comment-issue").click( function(){
+        jQuery("body").delegate( "#comment-issue","click",function(){
             setTimeout(function () {
                 removeTinyMCEEditor()
                 jQuery('textarea.myTinyMCETextArea').tinymce(tinyMCEConfigAdvanced);
@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
     }
 
     if (jQuery("#footer-comment-button").length != 0) {
-        jQuery("#footer-comment-button").click(function(){
+        jQuery("body").delegate("#footer-comment-button","click",function(){
             setTimeout(function () {
                 removeTinyMCEEditor()
                 jQuery('textarea.myTinyMCETextArea').tinymce(tinyMCEConfigAdvanced);
